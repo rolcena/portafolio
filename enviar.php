@@ -8,5 +8,5 @@
     $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje . "\nAsunto: " . $asunto;
 
     mail($destino,$asunto, $contenido);  
-    header("Location:index.html")
+    header("Location:index.html");
 ?>
