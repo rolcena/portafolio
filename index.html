@@ -16,7 +16,7 @@
     <meta name="robots" content="index,follow">
 
 
-    <title>ROLCENA 2</title>
+    <title>ROL 2</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
@@ -465,7 +465,17 @@
                 </div>
             </div>
     <section>
-    
+
+    <form method="post" action="enviar.php">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" name="nombre" placeholder="Nombre completo">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+        <input id="submit" name="submit" type="submit" value="Enviar">
+     </form>
+    <!--
     <form action="enviar.php" method="post">
         <div class="col-sm-6">
             <div class="form-group">
@@ -501,7 +511,7 @@
         </div>
 
     </form>
-
+    -->
         <div class="margin-top-80">
             <ul class="social-icon">
                 <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>

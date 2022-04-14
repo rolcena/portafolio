@@ -1,16 +1,19 @@
 <?php
 
-    $destino    =   "rolcena@hotmail.com";
-    $nombre     =   $_POST["nombre"];
-    $correo     =   $_POST["correo"];
-    $mensaje    =   $_POST["mensaje"];
-    $asunto     =   $_POST["asunto"];
-    $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje . "\nAsunto: " . $asunto;
+    $nombre = $ _POST['nombre'];
+    $email = $ _POST['email'];
+    $mensaje = $ _POST['mensaje'];
+    $para = 'tucorreo@email.com';
+    $titulo = 'Hola - La Webera';
+    
+    $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
+    
+    if ($ _POST['submit']) {
+        if (mail ($para, $titulo, $msjCorreo)) {
+            echo 'El mensaje se ha enviado';
+        } else {
+            echo 'Falló el envio';
+        }
+    }    
 
-    $resultado = mail($destino,"dsadasdsad", $contenido);  
-    if ($resultado) {
-        echo "El correo fue enviado";
-    } else {
-        echo "El correo no fue enviado";
-    }
 ?>
