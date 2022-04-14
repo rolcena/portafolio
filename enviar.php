@@ -3,7 +3,7 @@
     $nombre = $ _POST['nombre'];
     $email = $ _POST['email'];
     $mensaje = $ _POST['mensaje'];
-    $para = 'tucorreo@email.com';
+    $para = 'rolcena@hotmail.com';
     $titulo = 'Hola - La Webera';
     
     $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
