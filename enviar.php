@@ -4,8 +4,9 @@
     $nombre     =   $_POST["nombre"];
     $correo     =   $_POST["correo"];
     $mensaje    =   $_POST["mensaje"];
-    $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
+    $asunto     =   $_POST["asunto"];
+    $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje . "\nAsunto: " . $asunto;
 
-    mail($destino,"Contacto via ROLCENA.GA", $contenido);  
+    mail($destino,$asunto, $contenido);  
     header("Location:index.html")
 ?>
