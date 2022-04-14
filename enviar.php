@@ -1,9 +1,9 @@
 <?php
 
     $destino    =   "rolcena@hotmail.com";
-    $nombre     =   $_POST["name"];
-    $correo     =   $_POST["email"];
-    $mensaje    =   $_POST["message"];
+    $nombre     =   $_POST["nombre"];
+    $correo     =   $_POST["correo"];
+    $mensaje    =   $_POST["mensaje"];
     $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje;
 
     mail($destino,"Contacto via ROLCENA.GA", $contenido);  
