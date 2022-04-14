@@ -465,41 +465,42 @@
                 </div>
             </div>
     <section>
-                <form action="enviar.php" method="post">
+    
+    <form action="enviar.php" method="post">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" id="name" name="nombre" class="form-control" placeholder="Tu Nombre"
+                required>
+            </div>
+        </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" id="name" name="nombre" class="form-control" placeholder="Tu Nombre"
-                                required>
-                        </div>
-                    </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" id="email" name="correo" class="form-control" placeholder="Tu Correo"
+                required>
+            </div>
+        </div>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="email" id="email" name="correo" class="form-control" placeholder="Tu Correo"
-                                required>
-                        </div>
-                    </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <input type="text" id="asunt" name="asunto" class="form-control" placeholder="Asunto"
+                required>
+            </div>
+        </div>
 
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="text" id="asunt" name="asunto" class="form-control" placeholder="Asunto"
-                                required>
-                        </div>
-                    </div>
+        <div class="col-sm-12">
+            <div class="textarea-message form-group">
+                <textarea id="message" name="mensaje" class="textarea-message form-control"
+                placeholder="Escribe tu mensaje" rows="5" required></textarea>
+            </div>
+        </div>
 
-                    <div class="col-sm-12">
-                        <div class="textarea-message form-group">
-                            <textarea id="message" name="mensaje" class="textarea-message form-control"
-                                placeholder="Escribe tu mensaje" rows="5" required></textarea>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <input id="btnEnviar" type="submit"
-                            class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center"></input>
-                    </div>
+        <div class="text-center">
+            <input id="btnEnviar" type="submit"
+            class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center"></input>
+        </div>
 
-                </form>
+    </form>
 
         <div class="margin-top-80">
             <ul class="social-icon">
