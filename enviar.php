@@ -7,7 +7,7 @@
     $asunto     =   $_POST["asunto"];
     $contenido  =   "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nMensaje: " . $mensaje . "\nAsunto: " . $asunto;
 
-    $resultado = mail($destino,$asunto, $contenido);  
+    $resultado = mail($destino,"dsadasdsad", $contenido);  
     if ($resultado) {
         echo "El correo fue enviado";
     } else {
