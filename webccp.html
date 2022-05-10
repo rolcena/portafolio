@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>ROLCENACCP</title>
+  <link rel="icon" href="images/ccp2.ico" />
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="btrp/css/bootstrap.css">
+  <!-- REPRODUCTOR -->
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  <!-- END REPRODUCTOR -->
+</head>
+
+<body style="background-color: rgb(199, 199, 199);">
+
+  <header style="margin-bottom: 10px;">
+    <nav class="navbar text-light" style="background-color: rgb(22, 33, 46);">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col" href="#"><img src="images/ccp2.ico" width="60vw"></img></div>
+        </div>
+        <div class="row align-items-end ">
+          <a class="col m-1 btn btn-danger btn-sm margin-right-20" href="#id-ev">Evento</a>
+          <a class="col m-1 btn btn-danger btn-sm" href="#id-tv">TV</a>
+          <a class="col m-1 btn btn-danger btn-sm" href="#id-rdo">Radio</a>
+          <a class="col m-1 btn btn-danger btn-sm" href="#id-twt">Tweets</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="row">
+    <div class="col">
+      <section  style="margin-top:30px ;" id="id-tv">
+        <div class="container">
+          <div class="d-flex align-items-center flex-column" style="height: 50px;">
+            <div>
+              <p style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+                TV Online</p>
+            </div>
+            <div>
+              <video id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls data-setup='{}'
+                width="500px">
+                <source
+                  src="https://live.telelatinohd.com/hls/cu1as8e8mxraxmpll/12_.m3u8?token=Vrn5hVSGy4ax9PbFZolYLQ&expires=1652226073&ip=181.94.227.107"
+                  >
+              </video>
+              <script>
+                var player = videojs('my_video_1');
+                Player.pause();
+                player.play();
+              </script>
+            </div>
+            <div>
+              <button type="button" class="btn btn-primary btn-sm" style="border-radius:0;width:500px;"
+                onClick="window.location.reload();">Actualizar Página</button>
+            </div>
+          </div>   
+      </section>
+    
+      <section  style="margin-top:320px ;" id="id-rdo">
+        <div class="container">
+          <div class="d-flex align-items-center flex-column" style="height: 50px;">
+            <div class="row">
+              <div class="mb-auto p-3">
+                <p style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+                  Radio Online</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                  <video id="my_video_2" class="video-js  vjs-default-skin" poster="images/img-1330.png" controls data-setup='{}'width="200px" >
+                <source
+                  src="https://rds3.desdeparaguay.net/mov1330/mov1330.stream/chunklist_w1945575199.m3u8"
+                  >
+                </video>
+                <script>
+                  var player = videojs('my_video_2');
+                  Player.pause();
+                  player.play();
+                </script>        
+              </div>
+              <div class="col-sm">
+                <video id="my_video_3" class="video-js  vjs-default-skin" poster="images/img-730.png" controls data-setup='{}'width="200px" >
+                <source
+                  src="https://rds3.desdeparaguay.net/mov1080/mov1080.stream/chunklist_w560323749.m3u8"
+                  >
+                </video>
+                <script>
+                  var player = videojs('my_video_3');
+                  Player.pause();
+                  player.play();
+                </script>
+              </div>
+              <div class="col-sm">
+                <video id="my_video_4" class="video-js  vjs-default-skin" poster="images/img-1080.png" controls data-setup='{}'width="200px" >
+                <source
+                  src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8"
+                  >
+                </video>
+                <script>
+                  var player = videojs('my_video_4');
+                  Player.pause();
+                  player.play();
+                </script>
+              </div>
+            </div>
+    
+            <div class="row" style="margin-top: 150px;">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>  
+    </div>
+
+
+    <div class="col">
+      <section  style="margin-top:30px;margin-bottom: 780px;height: 20px;">
+        <div class="container">
+          <div class="d-flex align-items-center flex-column">
+            <div>
+              <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:600px;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
