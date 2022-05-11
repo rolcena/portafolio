@@ -25,15 +25,15 @@
 </head>
 
 <body style="background-color: rgb(199, 199, 199);">
-
-  <header style="margin-bottom: 10px;">
+<!--CABEZERA------------------------------------------------------------------------------------------------------>
+  <header style="width: 100%;">
     <nav class="navbar text-light" style="background-color: rgb(22, 33, 46);">
       <div class="container">
         <div class="row align-items-start">
           <div class="col" href="#"><img src="images/ccp2.ico" width="60vw"></img></div>
         </div>
         <div class="row align-items-end ">
-          <a class="col m-1 btn btn-danger btn-sm margin-right-20" href="#id-ev">Evento</a>
+          <a class="col m-1 btn btn-danger btn-sm margin-right-20" href="#id-evt">Evento</a>
           <a class="col m-1 btn btn-danger btn-sm" href="#id-tv">TV</a>
           <a class="col m-1 btn btn-danger btn-sm" href="#id-rdo">Radio</a>
           <a class="col m-1 btn btn-danger btn-sm" href="#id-twt">Tweets</a>
@@ -41,21 +41,23 @@
       </div>
     </nav>
   </header>
-
+<!--END-CABEZERA-------------------------------------------------------------------------------------------------->
+<!--COLUMNA 1----------------------------------------------------------------------------------------------------->
   <div class="row">
     <div class="col">
-      <section  style="margin-top:30px ;" id="id-tv">
+      <section class="p-3 margin-bottom:20" id="id-tv">
         <div class="container">
           <div class="d-flex align-items-center flex-column" style="height: 50px;">
             <div>
-              <p style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+              <p
+                style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
                 TV Online</p>
             </div>
             <div>
-              <video id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls data-setup='{}'
-                width="500px">
+              <video id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls
+                data-setup='{}' width="500px">
                 <source
-                  src="https://live.telelatinohd.com/hls/cu1as8e8mxraxmpll/12_.m3u8?token=Vrn5hVSGy4ax9PbFZolYLQ&expires=1652226073&ip=181.94.227.107"
+                  src="https://live.telelatinohd.com/hls/cu1as8e8mxraxmpll/12_.m3u8?token=YrcxpKAf8TO9OSOi-M8fgg&expires=1652281350&ip=181.94.227.107"
                   >
               </video>
               <script>
@@ -68,36 +70,36 @@
               <button type="button" class="btn btn-primary btn-sm" style="border-radius:0;width:500px;"
                 onClick="window.location.reload();">Actualizar Página</button>
             </div>
-          </div>   
+          </div>
+
       </section>
-    
-      <section  style="margin-top:320px ;" id="id-rdo">
+
+      <section style="margin-top:300px ;" id="id-rdo">
         <div class="container">
-          <div class="d-flex align-items-center flex-column" style="height: 50px;">
+          <div class="d-flex align-items-center flex-column">
             <div class="row">
               <div class="mb-auto p-3">
-                <p style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+                <p
+                  style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
                   Radio Online</p>
               </div>
             </div>
             <div class="row">
               <div class="col-sm">
-                  <video id="my_video_2" class="video-js  vjs-default-skin" poster="images/img-1330.png" controls data-setup='{}'width="200px" >
-                <source
-                  src="https://rds3.desdeparaguay.net/mov1330/mov1330.stream/chunklist_w1945575199.m3u8"
-                  >
+                <video id="my_video_2" class="video-js  vjs-default-skin" poster="images/img-1330.png" controls
+                  data-setup='{}' width="200px">
+                  <source src="https://rds3.desdeparaguay.net/mov1330/mov1330.stream/chunklist_w1945575199.m3u8">
                 </video>
                 <script>
                   var player = videojs('my_video_2');
                   Player.pause();
                   player.play();
-                </script>        
+                </script>
               </div>
               <div class="col-sm">
-                <video id="my_video_3" class="video-js  vjs-default-skin" poster="images/img-730.png" controls data-setup='{}'width="200px" >
-                <source
-                  src="https://rds3.desdeparaguay.net/mov1080/mov1080.stream/chunklist_w560323749.m3u8"
-                  >
+                <video id="my_video_3" class="video-js  vjs-default-skin" poster="images/img-730.png" controls
+                  data-setup='{}' width="200px">
+                  <source src="https://rds3.desdeparaguay.net/mov1080/mov1080.stream/chunklist_w560323749.m3u8">
                 </video>
                 <script>
                   var player = videojs('my_video_3');
@@ -106,10 +108,9 @@
                 </script>
               </div>
               <div class="col-sm">
-                <video id="my_video_4" class="video-js  vjs-default-skin" poster="images/img-1080.png" controls data-setup='{}'width="200px" >
-                <source
-                  src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8"
-                  >
+                <video id="my_video_4" class="video-js  vjs-default-skin" poster="images/img-1080.png" controls
+                  data-setup='{}' width="200px">
+                  <source src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8">
                 </video>
                 <script>
                   var player = videojs('my_video_4');
@@ -118,34 +119,62 @@
                 </script>
               </div>
             </div>
-    
-            <div class="row" style="margin-top: 150px;">
-              <div class="col-sm">
-                One of three columns
-              </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
-            </div>
-    
           </div>
         </div>
-      </section>  
+      </section>
     </div>
-
-
+    <section class="p-3 margin-bottom:20" id="id-tv">
+      <div class="container">
+        <div class="d-flex align-items-center flex-column">
+          <div class="row">
+            <div class="mb-auto p-3">
+              <p id="id-twt"
+                style="margin: top 80px;color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+                Tweets</p>
+            </div>
+          </div>
+          <div class="row">
+            <a class="twitter-timeline" data-lang="es" data-width="500" data-height="700" data-theme="dark" href="https://twitter.com/CCP1912oficial?ref_src=twsrc%5Etfw">Tweets by CCP1912oficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--END-COLUMNA 1-------------------------------------------------------------------------------------------------->
+<!--EVENTO--------------------------------------------------------------------------------------------------------->
     <div class="col">
-      <section  style="margin-top:30px;margin-bottom: 780px;height: 20px;">
+      <section style="margin-bottom: 700px;height: 20px;">
         <div class="container">
           <div class="d-flex align-items-center flex-column">
+            <div class="row">
+              <div class="mb-auto  p-3" id="id-evt">
+                <p
+                  style="color: rgb(255, 255, 255);font-weight: bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background: red;border-radius: 2em;width: 10em;text-align: center;">
+                  Proximo Evento</p>
+              </div>
+            </div>
             <div>
-              <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:600px;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+              <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" frameborder="0" width="600" height="760"
+                allowfullscreen allow='autoplay; fullscreen'
+                style="width:600px;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+              <script>
+                (function (d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'scorebat-jssdk'));
+              </script>
             </div>
           </div>
         </div>
       </section>
     </div>
   </div>
+<!--END-EVENTO----------------------------------------------------------------------------------------------------->
 
 </body>
+
 </html>
