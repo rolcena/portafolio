@@ -758,10 +758,6 @@ ul.portfolio li.active {
 
 /* Services */
 
-.services-section {
-  background-color: #F9F9F9;
-}
-
 .services-section hr {
   border-bottom: 2px solid #24b662;
   width: 42px;
@@ -771,7 +767,6 @@ ul.portfolio li.active {
 .services-section .services-detail {
   border-radius: 4px;
   border-bottom-right-radius: 20%;
-  background-color: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -805,17 +800,12 @@ ul.portfolio li.active {
 
 /* Contact Us */
 
-.contact-us {
-	background-color: #f9f9f9;
-}
-
 .contact-us-detail {
 }
 
 .contact-us-detail i {
 	font-size: 30px;
     margin-bottom: 10px;
-    background-color: #fff;
     border-radius: 50%;
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
 	transition: all 0.3s ease-in-out;
