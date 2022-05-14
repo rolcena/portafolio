@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+    <meta name="description" content="150 words">
+    <meta name="author" content="uipasta">
+    <meta name="url" content="http://www.yourdomainname.com">
+    <meta name="copyright" content="company name">
+    <meta name="robots" content="index,follow">
+
+
+    <title>ROLCENACCP</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.scss">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgccp/ccp1.png">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
+
+    <!-- All CSS Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/plugin.css">
+
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Google Web Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+
+    <!-- REPRODUCTOR -->
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <!-- END REPRODUCTOR -->
+
+    <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body >
+
+    <a href="#" class="btn-flotante">Actualizar Página</a>
+
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
+
+
+
+    <!-- Home & Menu Section Start -->
+    <header id="home" class="home-section" style="background-color: #16212e; height: 80px;">
+
+        <div class="header-top-area" style="background-color:#16212e;color: red;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="imgccp/ccp2.png" style="width:30px;"></img>
+                                <img src="imgccp/rologo2.png" style="width:80px;"></img></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <div class="navigation-menu">
+                            <div class="navbar">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a class="smoth-scroll" href="index.html"
+                                                style="color:red ;">ROLCENA.GA <div class="ripple-wrapper"></div></a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#id-evt">EVENTOS</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#id-twt">TWEETS CCP</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#id-tv">TV</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#id-rd">RADIO</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#id-rs">REDES CCP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+<!-- TV -------------------------------------------------------------------------------------------------------------->
+    <section id="id-tv" class="portfolio section-space-padding" style="display:flex;align-items: center;background-color: rgb(228, 228, 228);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title" >
+                        <h2>TV Online</h2>
+                    </div>
+                    <div style=" 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <video  id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls
+                            data-setup='{}' width="720px" >
+                            <source 
+                            src="https://edge9-sl.cvattv.com.ar/live/c3eds/FoxSports/SA_SAGEMCOM/FoxSports-avc1_579968=10002.m3u8"
+                            >
+                            </video>
+                            <script>
+                                var player = videojs('my_video_1');
+                                Player.pause();
+                                player.play();
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END TV --------------------------------------------------------------------------------------------------------->
+    <section id="id-rd" class="services-section section-space-padding" style="background-color: rgb(228, 228, 228);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2>Radio Online (1330-730-1080)AM</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <video id="my_video_2" class="video-js  vjs-default-skin" poster="images/img-1330.png" controls
+                    data-setup='{}' width="300px">
+                        <source src="https://rds3.desdeparaguay.net/mov1330/mov1330.stream/chunklist_w1945575199.m3u8">
+                    </video>
+                    <script>
+                        var player = videojs('my_video_2');
+                        Player.pause();
+                        player.play();
+                    </script>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <video id="my_video_3" class="video-js  vjs-default-skin" poster="images/img-730.png" controls
+                    data-setup='{}' width="300px">
+                        <source src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8">
+                    </video>
+                    <script>
+                        var player = videojs('my_video_3');
+                        Player.pause();
+                        player.play();
+                    </script>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <video id="my_video_4" class="video-js  vjs-default-skin" poster="images/img-1080.png" controls
+                    data-setup='{}' width="300px">
+                        <source src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8">
+                    </video>
+                    <script>
+                        var player = videojs('my_video_4');
+                        Player.pause();
+                        player.play();
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </section>    
+<!-- END Radio --------------------------------------------------------------------------------------------------------->
+
+<!-- TWETTS --> 
+<section class="services-section section-space-padding" style="background-color: rgb(228, 228, 228);">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12  section-space-padding" id="id-evt">
+                <div class="section-title">
+                    <h2>Próximo Partido</h2>
+                    <div style="display:flexbox;aling-items:center;display: block;overflow:auto;">
+                        <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" width="500" height="1500" 
+                        allowfullscreen allow='autoplay;fullscreen '
+                        class="_scorebatEmbeddedPlayer_"></iframe>
+                        <script>
+                            (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+                            fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'scorebat-jssdk'));
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12  section-space-padding" id="id-twt">
+                <div class="section-title">
+                    <h2>Tweets de Cerro Porteño</h2>
+                    <a class="twitter-timeline" data-lang="es" data-width="800" data-height="1500" data-theme="dark"
+                        href="https://twitter.com/CCP1912oficial?ref_src=twsrc%5Etfw">Tweets by CCP1912oficial</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>    
+<!-- END EVENTOS+TWEETS -------------------------------------------------------------------------------------------------------->
+
+    <section id="id-rs" class="contact-us section-space-padding" style="background-color:rgb(228, 228, 228);padding-bottom: 100px;">
+        <div class="section-title">
+            <h2>Redes Cerro Porteño</h2>
+        </div>
+        <div class="margin-top-80">
+            <ul class="social-icon">
+                <li><a href="https://es-la.facebook.com/ccpoficial/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/CCP1912oficial" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/ccp1912oficial/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/user/ccpoficial" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://m.tiktok.com/h5/share/usr/6785592631852483589.html?language=es&sec_uid=MS4wLjABAAAACIqwwNuNyXCq5L_vtNXfmea4zYs43qpyaEtoApwIYA517wBHSfjd232RzXSi5aCj&u_code=daef747jif9mg4&app=musically&user_id=6785592631852483589&tt_from=copy" target="_blank" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="https://cerro.com.py/" target="_blank" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <footer class="footer-section" style="background-color: #16212e;">
+        <div class="container">      
+            <div class="row">
+
+                <div class="col-md-4 text-left">
+                    <p><span><a href="#about" class="smoth-scroll">About Me</a></span> | <span><a href="index.html"
+                                class="smoth-scroll">CERRO MEDIA</a></span></p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <p>© Copyright 2022 </p>
+                </div>
+
+                <div class="col-md-4 uipasta-credit text-right">
+                    <p>Design By <a href="http://www.rolcena.ga" target="_blank" title="UiPasta">ROLCENA</a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top Start -->
+    <!-- <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a> -->
+    <!-- Back to Top End -->
+
+
+    <!-- All Javascript Plugins  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC0HAKwKinpoFKNGUwRBgkrKhF-sIqFUNA">
+    </script>
+
+    <!-- Main Javascript File  -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
