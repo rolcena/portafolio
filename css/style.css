@@ -35,6 +35,37 @@
  
 
 */
+
+
+.loader2 {
+	background: none repeat scroll 0 0 #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999; 
+}
+
+.loader2 .loader_inner {
+	background-image: url("../imgccp/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 200px;
+	width: 200px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute; 
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+}
+
 .ultracentrado{
     display: flex;
     flex-direction:column;

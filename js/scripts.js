@@ -32,6 +32,7 @@
 
 
 
+
 (function ($) {
     'use strict';
 
@@ -39,6 +40,13 @@
 
         
        /* Preloader */
+
+       $(window).load(function() {
+
+        $(".loader_inner").fadeOut();
+        $(".loader2").delay(400).fadeOut("slow");
+    
+    });
 		
         $(window).on('load', function() {
           $('body').addClass('loaded');
