@@ -283,7 +283,7 @@ fieldset {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #ffffff;
+    background: #fff;
     z-index: 999;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -305,7 +305,7 @@ body.loaded #preloader{
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: red;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -319,7 +319,7 @@ body.loaded #preloader{
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: #16212e;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -333,7 +333,7 @@ body.loaded #preloader{
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: red;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -1073,10 +1073,10 @@ ul.portfolio li.active {
         margin-top: -30px;
     }
     .navbar-collapse {
-        background: rgba(0, 0, 0, .9);
+        background: #16212e;
     }
     .navigation-background .navbar-collapse {
-        background: rgba(0, 0, 0, .9);
+        background: #16212e;
     }
     .home-section-background {
         padding-top: 120px;
