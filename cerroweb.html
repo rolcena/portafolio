@@ -51,7 +51,7 @@
 <body id="stop-scrolling">
 
     <a href="#" class="btn-flotante">Actualizar Página</a>
-    
+
     <!-- Preloader Start -->
     <div class="preloader2"></div>
     <!-- Preloader End -->
@@ -65,7 +65,7 @@
 
                     <div class="col-sm-3">
                         <div class="logo">
-                            <a href="index.html"><img src="imgccp/ccp2.png" style="width:30px;"></img>
+                            <a href="index.html"><img src="imgccp/ccpcolor.svg" style="width:30px;"></img>
                                 <img src="imgccp/rologo2.png" style="width:80px;"></img></a>
                         </div>
                     </div>
@@ -108,37 +108,36 @@
 
 
     </header>
-<!-- TV -------------------------------------------------------------------------------------------------------------->
+    <!-- TV -------------------------------------------------------------------------------------------------------------->
     <section id="id-tv" class="portfolio section-space-padding">
         <div class="container" style="padding-top: 60px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="section-title" >
+                    <div class="section-title">
                         <h2>TV Online</h2>
                     </div>
                     <div style="display: flex; align-items: center;justify-content: center;">
-                            <video  id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls
+                        <video id="my_video_1" class="video-js  vjs-default-skin" poster="images/img-tv.png" controls
                             data-setup='{}' width="480px">
-                            <source 
-                            src="https://edge9-sl.cvattv.com.ar/live/c3eds/FoxSports/SA_SAGEMCOM/FoxSports-avc1_579968=10002.m3u8"
-                            >
-                            </video>
-                            <script>
-                                var player = videojs('my_video_1');
-                                Player.pause();
-                                player.play();
-                            </script>
+                            <source
+                                src="https://edge9-sl.cvattv.com.ar/live/c3eds/FoxSports/SA_SAGEMCOM/FoxSports-avc1_579968=10002.m3u8">
+                        </video>
+                        <script>
+                            var player = videojs('my_video_1');
+                            Player.pause();
+                            player.play();
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- END TV --------------------------------------------------------------------------------------------------------->
+    <!-- END TV --------------------------------------------------------------------------------------------------------->
     <section id="id-rd" class="services-section section-space-padding">
-        <div class="container"style="padding-top: 60px;">
+        <div class="container" style="padding-top: 60px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="section-title" >
+                    <div class="section-title">
                         <h2>Radio Online AM</h2>
                     </div>
                 </div>
@@ -148,7 +147,7 @@
 
                 <div class="col-md-4 col-sm-6 ultracentrado">
                     <video id="my_video_2" class="video-js  vjs-default-skin" poster="images/img-1330.png" controls
-                    data-setup='{}' width="320px">
+                        data-setup='{}' width="320px">
                         <source src="https://rds3.desdeparaguay.net/mov1330/mov1330.stream/chunklist_w1945575199.m3u8">
                     </video>
                     <script>
@@ -160,7 +159,7 @@
 
                 <div class="col-md-4 col-sm-6 ultracentrado">
                     <video id="my_video_3" class="video-js  vjs-default-skin" poster="images/img-730.png" controls
-                    data-setup='{}' width="320px">
+                        data-setup='{}' width="320px">
                         <source src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8">
                     </video>
                     <script>
@@ -172,7 +171,7 @@
 
                 <div class="col-md-4 col-sm-6 ultracentrado">
                     <video id="my_video_4" class="video-js  vjs-default-skin" poster="images/img-1080.png" controls
-                    data-setup='{}' width="320px">
+                        data-setup='{}' width="320px">
                         <source src="https://rds3.desdeparaguay.net/trans730/trans730/chunklist_w1405202542.m3u8">
                     </video>
                     <script>
@@ -184,69 +183,75 @@
 
             </div>
         </div>
-    </section>    
-<!-- END Radio --------------------------------------------------------------------------------------------------------->
+    </section>
+    <!-- END Radio --------------------------------------------------------------------------------------------------------->
 
-<!-- TWETTS --> 
-<section class="services-section section-space-padding" >
-    <div class="container">
-        <div class="row">
+    <!-- TWETTS -->
+    <section class="services-section section-space-padding">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-md-6 col-sm-12  section-space-padding" id="id-evt"  style="display:flex;padding: 40px;">
-                <div class="section-title" style="padding-top: 60px;">
-                    <h2>Próximo Partido</h2>
-                    <div>
-                        <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" width="480" height="1500" 
-                        allowfullscreen allow='autoplay;fullscreen '
-                        class="_scorebatEmbeddedPlayer_"></iframe>
-                        <script>
-                            (function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
-                            fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'scorebat-jssdk'));
-                        </script>
+                <div class="col-md-6 col-sm-12  section-space-padding" id="id-evt" style="display:flex;padding: 40px;">
+                    <div class="section-title" style="padding-top: 60px;">
+                        <h2>Próximo Partido</h2>
+                        <div>
+                            <iframe src="https://www.scorebat.com/live-stream/cerro-porteno/" width="480" height="1500"
+                                allowfullscreen allow='autoplay;fullscreen ' class="_scorebatEmbeddedPlayer_"></iframe>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'scorebat-jssdk'));
+                            </script>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-sm-12  section-space-padding" id="id-twt" style="display:flex;">
-                <div class="section-title" style="padding-top: 60px;">
-                    <h2>Tweets CCP</h2>
-                    <a class="twitter-timeline" data-lang="es" data-width="800" data-height="1500" data-theme="dark"
-                        href="https://twitter.com/CCP1912oficial?ref_src=twsrc%5Etfw">Tweets by CCP1912oficial</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="col-md-6 col-sm-12  section-space-padding" id="id-twt" style="display:flex;">
+                    <div class="section-title" style="padding-top: 60px;">
+                        <h2>Tweets CCP</h2>
+                        <a class="twitter-timeline" data-lang="es" data-width="800" data-height="1500" data-theme="dark"
+                            href="https://twitter.com/CCP1912oficial?ref_src=twsrc%5Etfw">Tweets by CCP1912oficial</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>    
-<!-- END EVENTOS+TWEETS -------------------------------------------------------------------------------------------------------->
+    </section>
+    <!-- END EVENTOS+TWEETS -------------------------------------------------------------------------------------------------------->
 
     <section id="id-rs" class="contact-us section-space-padding">
         <div class="section-title" style="padding-top: 60px;">
             <h2>Redes Cerro Porteño</h2>
         </div>
-        <div >
+        <div>
             <ul class="socialIcons">
-                <li class="facebook"><a href="https://es-la.facebook.com/ccpoficial/" target="_blank"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
-                <li class="twitter"><a href="https://twitter.com/CCP1912oficial" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
-                <li class="instagram"><a href="https://www.instagram.com/ccp1912oficial/" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
-                <li class="youtube"><a href="https://www.youtube.com/user/ccpoficial" target="_blank"><i class="fa fa-fw fa-youtube-play"></i>Youtube</a></li>
-                <li class="tiktok"><a href="https://m.tiktok.com/h5/share/usr/6785592631852483589.html?language=es&sec_uid=MS4wLjABAAAACIqwwNuNyXCq5L_vtNXfmea4zYs43qpyaEtoApwIYA517wBHSfjd232RzXSi5aCj&u_code=daef747jif9mg4&app=musically&user_id=6785592631852483589&tt_from=copy" target="_blank"><i class="fa fa-fw fa-user-circle-o "></i>Tiktok</a></li>
-                <li class="ofipage"><a href="https://cerro.com.py/" target="_blank"><i class="fa fa-fw  fa-internet-explorer"></i>Oficial Page</a></li>
-                </ul>
+                <li class="facebook"><a href="https://es-la.facebook.com/ccpoficial/" target="_blank"><i
+                            class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/CCP1912oficial" target="_blank"><i
+                            class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/ccp1912oficial/" target="_blank"><i
+                            class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+                <li class="youtube"><a href="https://www.youtube.com/user/ccpoficial" target="_blank"><i
+                            class="fa fa-fw fa-youtube-play"></i>Youtube</a></li>
+                <li class="tiktok"><a
+                        href="https://m.tiktok.com/h5/share/usr/6785592631852483589.html?language=es&sec_uid=MS4wLjABAAAACIqwwNuNyXCq5L_vtNXfmea4zYs43qpyaEtoApwIYA517wBHSfjd232RzXSi5aCj&u_code=daef747jif9mg4&app=musically&user_id=6785592631852483589&tt_from=copy"
+                        target="_blank"><i class="fa fa-fw fa-user-circle-o "></i>Tiktok</a></li>
+                <li class="ofipage"><a href="https://cerro.com.py/" target="_blank"><i
+                            class="fa fa-fw  fa-internet-explorer"></i>Oficial Page</a></li>
+            </ul>
         </div>
 
     </section>
     <!-- Contact End -->
     <!-- Footer Start -->
     <footer class="footer-section" style="background-color: #16212e;">
-        <div class="container">      
+        <div class="container">
             <div class="row">
 
                 <div class="col-md-4 text-left">

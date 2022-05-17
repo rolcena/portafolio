@@ -37,39 +37,39 @@
 
     jQuery(document).ready(function () {
 
-        
-       /* Preloader */
 
-     
-        function preloaderFadeOutInit2(){
+        /* Preloader */
+
+
+        function preloaderFadeOutInit2() {
             $('.preloader2').fadeOut('slow');
-            $('body').attr('id','');
-            }
-            // Window load function
-            jQuery(window).on('load', function () {
+            $('body').attr('id', '');
+        }
+        // Window load function
+        jQuery(window).on('load', function () {
             (function ($) {
-            preloaderFadeOutInit2();
+                preloaderFadeOutInit2();
             })(jQuery);
-            });
+        });
 
-        function preloaderFadeOutInit1(){
+        function preloaderFadeOutInit1() {
             $('.preloader1').fadeOut('slow');
-            $('body').attr('id','');
-            }
-            // Window load function
-            jQuery(window).on('load', function () {
+            $('body').attr('id', '');
+        }
+        // Window load function
+        jQuery(window).on('load', function () {
             (function ($) {
-            preloaderFadeOutInit1();
+                preloaderFadeOutInit1();
             })(jQuery);
-            });
-		
-		
-		
-       /* Smooth Scroll */
+        });
 
-       
-       /* Scroll Naviagation Background Change with Sticky Navigation */
-		 
+
+
+        /* Smooth Scroll */
+
+
+        /* Scroll Naviagation Background Change with Sticky Navigation */
+
         $(window).on('scroll', function () {
             if ($(window).scrollTop() > 100) {
                 $('.header-top-area').addClass('navigation-background');
@@ -77,12 +77,12 @@
                 $('.header-top-area').removeClass('navigation-background');
             }
         });
-		
-		
-		
-		
-       /* Mobile Navigation Hide or Collapse on Click */
-		
+
+
+
+
+        /* Mobile Navigation Hide or Collapse on Click */
+
         $(document).on('click', '.navbar-collapse.in', function (e) {
             if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
                 $(this).collapse('hide');
@@ -91,42 +91,45 @@
         $('body').scrollspy({
             target: '.navbar-collapse',
             offset: 195
-        
-		 });
-		 
-		
-		
-		
+
+        });
+
+
+
+
         /* Scroll To Top */
-		
-        $(window).scroll(function(){
-        if ($(this).scrollTop() >= 500) {
-            $('.scroll-to-top').fadeIn();
-         } else {
-            $('.scroll-to-top').fadeOut();
-         }
-	   });
-	
-	
-	    $('.scroll-to-top').click(function(){
-		  $('html, body').animate({scrollTop : 0},800);
-		  return false;
-	    });
-		
-		
-		
-		
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 500) {
+                $('.scroll-to-top').fadeIn();
+            } else {
+                $('.scroll-to-top').fadeOut();
+            }
+        });
+
+
+        $('.scroll-to-top').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+
+
+
         /* Typed.js */
-		
-        $(window).load(function(){
-        $(".typing").typed({
-            strings: ["I am A Freelancer.", "I Design Websites.", "I Live in Paraguay."],    /* You can change the home section typing text from
+
+        $(window).load(function () {
+            $(".typing").typed({
+                strings: ["I am A Freelancer.", "I Design Websites.", "I Live in Paraguay."],
+                /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
-            typeSpeed: 50
-          });
-         });
-        
-		 
+                typeSpeed: 50
+            });
+        });
+
+
         /* Parallax Background */
 
         $(window).stellar({
@@ -137,47 +140,50 @@
             verticalOffset: 0,
         });
 
-        
-		
-		
+
+
+
         /* Portfolio Filtering */
 
         $('.portfolio-inner').mixItUp();
 
 
-       
+
         /* Magnific Popup */
 
         $('.portfolio-popup').magnificPopup({
             type: 'image',
-			
-            gallery: { enabled: true },
-			zoom: { enabled: true,
-			        duration: 500
-					
-          },
-		  
-         image:{
-               markup: '<div class="mfp-figure portfolio-pop-up">'+
-               '<div class="mfp-close"></div>'+
-               '<div class="mfp-img"></div>'+
-               '<div class="mfp-bottom-bar portfolio_title">'+
-               '<div class="mfp-title"></div>'+
-               '<div class="mfp-counter"></div>'+
-               '</div>'+
-               '</div>',
 
-               titleSrc:function(item){
-                return item.el.attr('title');
-              }
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 500
+
+            },
+
+            image: {
+                markup: '<div class="mfp-figure portfolio-pop-up">' +
+                    '<div class="mfp-close"></div>' +
+                    '<div class="mfp-img"></div>' +
+                    '<div class="mfp-bottom-bar portfolio_title">' +
+                    '<div class="mfp-title"></div>' +
+                    '<div class="mfp-counter"></div>' +
+                    '</div>' +
+                    '</div>',
+
+                titleSrc: function (item) {
+                    return item.el.attr('title');
+                }
             }
-		  
-		  
-          });
 
-       
-	   
-		 
+
+        });
+
+
+
+
         /* Testimonial Carousel/Slider */
 
         $(".testimonial-carousel-list").owlCarousel({
@@ -193,44 +199,44 @@
             itemsMobile: [479, 1],
             autoHeight: true,
             pagination: false,
-            transitionStyle : "backSlide"
+            transitionStyle: "backSlide"
         });
-		
-		
-		
-		
+
+
+
+
         /* Statistics Counter */
-		
-        $('.statistics').appear(function() {
-           var counter = $(this).find('.statistics-count');
-           var toCount = counter.data('count');
-      
-           $(counter).countTo({
-           from: 0,
-           to: toCount,
-           speed: 5000,
-           refreshInterval: 50
-           })
-           });
-		   
-		  
-         
-         /* Google Map */
-		 
-         $('#my-address').gMap({
+
+        $('.statistics').appear(function () {
+            var counter = $(this).find('.statistics-count');
+            var toCount = counter.data('count');
+
+            $(counter).countTo({
+                from: 0,
+                to: toCount,
+                speed: 5000,
+                refreshInterval: 50
+            })
+        });
+
+
+
+        /* Google Map */
+
+        $('#my-address').gMap({
             zoom: 5,
             scrollwheel: true,
             maptype: 'ROADMAP',
-            markers:[
-            {
-            address: "New York",  /* You can change your address from here */
-            html: "<b>Address</b>: <br> Area-2, Rose Area, New York, U.S.A.",   /* You can change display address text from here */
-            popup: true
-            }
-            ]
-            });
-              
-		   
-            });
+            markers: [{
+                address: "New York",
+                /* You can change your address from here */
+                html: "<b>Address</b>: <br> Area-2, Rose Area, New York, U.S.A.",
+                /* You can change display address text from here */
+                popup: true
+            }]
+        });
 
-   })(jQuery);
+
+    });
+
+})(jQuery);
