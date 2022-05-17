@@ -99,7 +99,46 @@ body {
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    
 }
+
+.bodybar{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: black red;   /* scroll thumb and track */
+}
+
+.bodybar::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .bodybar::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  
+  .bodybar::-webkit-scrollbar-thumb {
+    background-color: red;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid black;  /* creates padding around scroll thumb */
+  }
+
+  .bodybar-blue{
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #133760 red;   /* scroll thumb and track */
+}
+
+.bodybar-blue::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .bodybar-blue::-webkit-scrollbar-track {
+    background: #133760;        /* color of the tracking area */
+  }
+  
+  .bodybar-blue::-webkit-scrollbar-thumb {
+    background-color: red;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #133760;  /* creates padding around scroll thumb */
+  }
 
 html,
 body {
@@ -178,7 +217,7 @@ fieldset {
 .section-title h2 {
     margin-top: 0;
     font-weight: 600;
-    color: #16212e;
+    color: #133760;
     border-bottom: 4px solid red;
     border-radius: 25px;
     font-size: 20px;
@@ -376,7 +415,7 @@ body.loaded #preloader {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #16212e;
+    border-top-color: #133760;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -1173,11 +1212,11 @@ ul.portfolio li.active {
     }
 
     .navbar-collapse {
-        background: #16212e;
+        background: #133760;
     }
 
     .navigation-background .navbar-collapse {
-        background: #16212e;
+        background: #133760;
     }
 
     .home-section-background {
