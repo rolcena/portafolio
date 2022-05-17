@@ -37,34 +37,6 @@
 */
 
 
-.loader2 {
-	background: none repeat scroll 0 0 #ffffff;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 9999; 
-}
-
-.loader2 .loader_inner {
-	background-image: url("../imgccp/preloader.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #fff;
-	height: 200px;
-	width: 200px;
-	margin-top: -30px;
-	margin-left: -30px;
-	left: 50%;
-	top: 50%;
-	position: absolute; 
-    -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-}
 
 .ultracentrado{
     display: flex;
@@ -307,6 +279,45 @@ fieldset {
 
 
 /* Preloader */
+.preloader1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background-image: url('../imgccp/roloani.gif'); /* your icon gif file path */
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    }
+    #stop-scrolling {
+        height: 100% !important;
+        overflow: hidden !important;
+        }
+
+.preloader2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background-image: url('../imgccp/ccpani.gif'); /* your icon gif file path */
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    background-position: center;
+    }
+    #stop-scrolling {
+        height: 100% !important;
+        overflow: hidden !important;
+        }
 
 #preloader {
     position: fixed;
@@ -1103,7 +1114,15 @@ ul.portfolio li.active {
     .navbar-toggle {
         margin-top: -30px;
     }
-    .navbar-collapse {
+
+    .navbar-collapse1 {
+        background: #000000;
+    }
+    .navigation-background .navbar-collapse1 {
+        background: #16212e;
+    }
+
+    .navbar-collapse2 {
         background: #16212e;
     }
     .navigation-background .navbar-collapse {
