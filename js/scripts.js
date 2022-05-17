@@ -32,7 +32,6 @@
 
 
 
-
 (function ($) {
     'use strict';
 
@@ -41,30 +40,32 @@
         
        /* Preloader */
 
-       $(window).load(function() {
+     
+        function preloaderFadeOutInit2(){
+            $('.preloader2').fadeOut('slow');
+            $('body').attr('id','');
+            }
+            // Window load function
+            jQuery(window).on('load', function () {
+            (function ($) {
+            preloaderFadeOutInit2();
+            })(jQuery);
+            });
 
-        $(".loader_inner").fadeOut();
-        $(".loader2").delay(400).fadeOut("slow");
-    
-    });
-		
-        $(window).on('load', function() {
-          $('body').addClass('loaded');
-        });
+        function preloaderFadeOutInit1(){
+            $('.preloader1').fadeOut('slow');
+            $('body').attr('id','');
+            }
+            // Window load function
+            jQuery(window).on('load', function () {
+            (function ($) {
+            preloaderFadeOutInit1();
+            })(jQuery);
+            });
 		
 		
 		
        /* Smooth Scroll */
-
-        $('a.smoth-scroll').on("click", function (e) {
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top - 50
-            }, 1000);
-            e.preventDefault();
-        });
-		
-
 
        
        /* Scroll Naviagation Background Change with Sticky Navigation */
