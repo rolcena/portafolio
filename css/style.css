@@ -32,6 +32,8 @@
   14. Scroll To Top
   15. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
   16. UiPasta Credit
+
+  17. Icons Social PERSONALIZADOS
  
 
 */
@@ -96,12 +98,12 @@ body {
 }
 
 ::selection {
-    background-color: #24b662;
+    background-color: red;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background-color: #24b662;
+    background-color: red;
     color: #ffffff;
 }
 
@@ -243,7 +245,7 @@ fieldset {
 .button-style:hover,
 .button-style:active,
 .button-style:focus {
-	background: #24b662;
+	background: red;
 	color: #ffffff !important;
 }
 
@@ -626,7 +628,7 @@ ul.portfolio li:hover {
 
 ul.portfolio li.active {
     color: #ffffff;
-    background-color: #24b662;
+    background-color: red;
     padding: 5px 20px;
     border-radius: 20px;
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
@@ -665,7 +667,7 @@ ul.portfolio li.active {
   opacity: 0;
   left: 0%;
   right: 0%;
-  background-color: #24b662;
+  background-color: red;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -682,7 +684,7 @@ ul.portfolio li.active {
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 	margin-top: 40px;
     font-size: 50px;
-    background-color: #24b662;
+    background-color: red;
     width: 44px;
 	right: 0px;
 }
@@ -724,7 +726,7 @@ ul.portfolio li.active {
 .testimonial-word h2 {
     font-size: 12px;
     text-transform: uppercase;
-	color: #24b662;
+	color: red;
     font-weight: 700;
     letter-spacing: 4px;
     margin: 20px 0px;
@@ -735,7 +737,7 @@ ul.portfolio li.active {
 }
 
 .owl-navi {
-	color: #24b662;
+	color: red;
 }
 
 .owl-navi:hover {
@@ -809,7 +811,7 @@ ul.portfolio li.active {
 /* Services */
 
 .services-section hr {
-  border-bottom: 2px solid #24b662;
+  border-bottom: 2px solid red;
   width: 42px;
   margin-left: 0px;
 }
@@ -906,14 +908,14 @@ ul.portfolio li.active {
 }
 
 .form-control:focus {
-	border-color: #24b662;
+	border-color: red;
 	border-width: 2px;
 }
 
 .map {
     width: 100%;
     height: 340px;
-    border: 1px solid #24b662;
+    border: 1px solid red;
 }
 
 
@@ -1098,10 +1100,10 @@ ul.portfolio li.active {
         padding: 11px 15px;
     }
     .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
+        color: red;
     }
     .navigation-background .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
+        color: red;
     }
     .navigation-background .navigation-menu .navbar-nav li a {
         padding: 11px 15px;
@@ -1198,7 +1200,7 @@ ul.portfolio li.active {
 /* Scroll To Top */
 
 .scroll-to-top {
-    background-color: #24b662;
+    background-color: red;
     display: none;
     width: 50px;
     height: 50px;
@@ -1544,4 +1546,77 @@ ul.portfolio li.active {
 
 .uipasta-credit a:hover {
     color: #ffffff;
+}
+
+/* Personalizados */
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: rgb(184, 184, 184);
+  list-style: none;
+  display: inline-block;
+  margin: 2px;
+  border-radius:3em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  margin: 1em;
+  align-items: center;
+  width: 1em;
+  max-width: 1em;
+  height:1em;
+  white-space: nowrap;
+  line-height: 1em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 1em;
+}
+
+.socialIcons li:hover a {
+  padding-right: 8em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .pinterest {
+  background-color: #c92228;
+  box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .youtube {
+    background-color: #c92228;
+    box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .tiktok {
+    background-color: #000000;
+    box-shadow: 0 0 16px #000000;
+}
+
+.socialIcons .ofipage {
+  background-color: blue;
+  box-shadow: 0 0 16px blue;
 }
