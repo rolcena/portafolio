@@ -1114,15 +1114,7 @@ ul.portfolio li.active {
     .navbar-toggle {
         margin-top: -30px;
     }
-
-    .navbar-collapse1 {
-        background: #000000;
-    }
-    .navigation-background .navbar-collapse1 {
-        background: #16212e;
-    }
-
-    .navbar-collapse2 {
+    .navbar-collapse {
         background: #16212e;
     }
     .navigation-background .navbar-collapse {
