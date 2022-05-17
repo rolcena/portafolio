@@ -1537,6 +1537,7 @@ ul.portfolio li.active {
 /* UiPasta Credit */
 
 .uipasta-credit {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .uipasta-credit a {
