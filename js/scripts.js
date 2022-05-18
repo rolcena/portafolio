@@ -1,17 +1,5 @@
 /*
    
-    Template Name : Rolling - Freelancer Portfolio Template
-    Author : UiPasta Team
-    Website : http://www.uipasta.com/
-    Support : http://www.uipasta.com/support/
-	
-	
-*/
-
-
-
-/*
-   
    Table Of Content
    
    1. Preloader
@@ -31,12 +19,14 @@
 */
 
 
-
 (function ($) {
     'use strict';
 
     jQuery(document).ready(function () {
 
+
+
+       
 
         /* Preloader */
 
