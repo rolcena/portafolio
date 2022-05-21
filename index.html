@@ -20,6 +20,8 @@
   <!-- Main CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <!-- Gallery CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
 
   <!-- Google Web Fonts  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
@@ -144,77 +146,18 @@
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <ul class="portfolio">
-          <li class="filter" data-filter="all">all</li>
-          <li class="filter" data-filter=".apps">apps</li>
-          <li class="filter" data-filter=".mockups">mockups</li>
-          <li class="filter" data-filter=".wordpress">wordpress</li>
-        </ul>
-      </div>
-
-      <div class="portfolio-inner">
-        <div class="row">
-
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
-            <div class="item">
-              <a href="images/portfolio/1.jpg" class="portfolio-popup" title="Project Title">
-                <img src="images/portfolio/1.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix mockups">
-            <div class="item">
-              <a href="images/portfolio/2.jpg" class="portfolio-popup" title="Project Title">
-                <img src="images/portfolio/2.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
-            <div class="item">
-              <a href="images/portfolio/3.jpg" class="portfolio-popup" title="Project Title">
-                <img src="images/portfolio/3.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix mockups wordpress">
-            <div class="item">
-              <a href="images/portfolio/4.jpg" class="portfolio-popup" title="Project Title">
-                <img src="images/portfolio/4.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix wordpress apps">
-            <div class="item">
-              <a href="images/portfolio/5.jpg" class="portfolio-popup" title="Project Title">
-                <img src="images/portfolio/5.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12 mix apps mockups wordpress" title="Project Title">
-            <div class="item">
-              <a href="images/portfolio/6.jpg" class="portfolio-popup">
-                <img src="images/portfolio/6.jpg" alt="">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
-
-    <div class="text-center margin-top-50">
-      <a class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right smoth-scroll"
-        href="#contact">Let's Discuss</a>
+    <div class="bodybar" style="margin-right:100px;margin-left:100px;height:500px;overflow-y: scroll;">
+      <div class="grid-gallery" id="fotos2">
+        <script>
+          let n = 10; //numero de imagenes
+          let gallery = document.getElementById('fotos2') ;
+          for (let i = 1; i<= n; i++){
+            gallery.innerHTML += '<a class="grid-gallery__item portfolio-popup" title="" href="fotos/'+i+'.jpg"><img class="grid-gallery__image" src="fotos/'+i+'.jpg"></a>';
+          }
+        </script>   
+      </div> 
     </div>
-
   </section>
   <!-- Portfolio End -->
 
