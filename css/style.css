@@ -748,22 +748,6 @@ ul.portfolio li.active {
     opacity: 1;
 }
 
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
-    margin-top: 40px;
-    border-radius: 1000px;
-    font-size: 50px;
-    background-color: red;
-    width: 44px;
-    top: 20px;
-    right: 20px;
-}
-
-.mfp-zoom-out-cur,
-.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-    cursor: inherit;
-}
-
 
 
 
