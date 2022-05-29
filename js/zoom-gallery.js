@@ -9,7 +9,7 @@ $(document).ready(function() {
 			verticalFit: true,
 			titleSrc: function(item) {
 				//return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" download="rolcenaEdit">Descargar Imagen</a>';
-				return '<a class="image-source-link" href="'+item.el.attr('data-source')+'" download="rolcenaEdit">Click aquí para descargar imagen</a>';
+				return '<a class="image-source-link" href="'+item.el.attr('data-source')+'" download="rolcenaEdit">Click aquí para descargar</a>';
 			}
 		},
 		gallery: {
