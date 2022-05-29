@@ -22,6 +22,8 @@
 
   <!-- Gallery CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery-carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/zoom-gallery.css">
 
   <!-- Google Web Fonts  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
@@ -42,37 +44,38 @@
         <div class="row">
           <div class="col-sm-3" ">
             <div class=" logo">
-              <a href="cerroweb.html/"><img src="imgccp/rologo.svg" style="width:30px;">
+            <a href="cerroweb.html/"><img src="imgccp/rologo.svg" style="width:30px;">
               <img src="imgccp/rologo2.svg" style="width:100px;"></img></a>
-            </div>
           </div>
-          <div class="col-sm-9">
-            <div class="navigation-menu">
-              <div class="navbar">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: #000000;">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <div class="navbar-collapse collapse" style="background-color: #000000;">
-                    <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a class="smoth-scroll" style="color:red ;" href="cerroweb.html#id-tv"
-                          target="_blank">TV Online CerroWEB <div class="ripple-wrapper"></div></a></li>
-                      <li><a class="smoth-scroll" href="#about">About</a></li>
-                      <li><a class="smoth-scroll" href="#portfolio">Portfolio</a></li>
-                      <li><a class="smoth-scroll" href="#testimonials">Testimonial</a></li>
-                      <li><a class="smoth-scroll" href="#services">services</a></li>
-                      <li><a class="smoth-scroll" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="navigation-menu">
+            <div class="navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
+                  style="background-color: #000000;">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="navbar-collapse collapse" style="background-color: #000000;">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a class="smoth-scroll" style="color:red ;" href="cerroweb.html#id-tv"
+                      target="_blank">TV Online CerroWEB <div class="ripple-wrapper"></div></a></li>
+                  <li><a class="smoth-scroll" href="#about">About</a></li>
+                  <li><a class="smoth-scroll" href="#portfolio">Portfolio</a></li>
+                  <li><a class="smoth-scroll" href="#testimonials">Testimonial</a></li>
+                  <li><a class="smoth-scroll" href="#services">services</a></li>
+                  <li><a class="smoth-scroll" href="#contact">Contact</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="home-section-background" data-stellar-background-ratio="0.6">
@@ -86,20 +89,14 @@
                   <h2><span class="typing"></span></h2>
                   <div class="margin-top-50">
                     <a target="_blank" href="cerroweb.html">
-                      <img style="width: 40px;margin: 15px;"
-                        onmouseout="this.src='imgccp/ico0.svg'"
-                        onmouseover="this.src='imgccp/ccpred.svg';"
-                        src="imgccp/ico0.svg"></a>
+                      <img style="width: 40px;margin: 15px;" onmouseout="this.src='imgccp/ico0.svg'"
+                        onmouseover="this.src='imgccp/ccpred.svg';" src="imgccp/ico0.svg"></a>
                     <a target="_blank" href="https://twitter.com/rolcena">
-                      <img style="width: 40px;margin: 15px;"
-                        onmouseout="this.src='imgccp/ico2.svg';"
-                        onmouseover="this.src='imgccp/twtred.svg';"
-                        src="imgccp/ico2.svg"></a>
+                      <img style="width: 40px;margin: 15px;" onmouseout="this.src='imgccp/ico2.svg';"
+                        onmouseover="this.src='imgccp/twtred.svg';" src="imgccp/ico2.svg"></a>
                     <a target="_blank" href="https://www.instagram.com/rolcenaccp/">
-                      <img style="width: 40px;margin: 15px;"
-                        onmouseout="this.src='imgccp/ico3.svg';"
-                        onmouseover="this.src='imgccp/intred.svg';"
-                        src="imgccp/ico3.svg"></a>
+                      <img style="width: 40px;margin: 15px;" onmouseout="this.src='imgccp/ico3.svg';"
+                        onmouseover="this.src='imgccp/intred.svg';" src="imgccp/ico3.svg"></a>
                   </div>
                   <div class="margin-top-50">
                     <a class="button button-style button-style-icon fa fa-long-arrow-right smoth-scroll"
@@ -134,7 +131,6 @@
   </section>
   <!-- About End -->
 
-
   <!-- Portfolio Start -->
   <section id="portfolio" class="portfolio section-space-padding">
     <div class="container">
@@ -147,20 +143,28 @@
         </div>
       </div>
     </div>
-    <div class="bodybar" style="margin-right:100px;margin-left:100px;height:500px;overflow-y: scroll;">
-      <div class="grid-gallery" id="fotos2">
-        <script>
-          let n = 10; //numero de imagenes
-          let gallery = document.getElementById('fotos2') ;
-          for (let i = 1; i<= n; i++){
-            gallery.innerHTML += '<a class="grid-gallery__item portfolio-popup" title="" href="fotos/'+i+'.jpg"><img class="grid-gallery__image" src="fotos/'+i+'.jpg"></a>';
-          }
-        </script>   
-      </div> 
+    <div class="zoom-gallery" >
+      <div class="carousel-wrap">
+        <div class="owl-carousel" id="fotos1">
+          <!--<script>
+            let n = 10; //numero de imagenes
+            let gallery = document.getElementById('fotos1');
+            for (let i = 1; i <= n; i++) {
+              gallery.innerHTML += '<a href="fotos/' + i + '.jpg" class="item" download="myimage"><img style="padding:10px;" src="fotos/' + i + '.jpg"></a>';
+            }
+          </script> -->
+          <script>
+            let n = 10; //numero de imagenes
+            let gallery = document.getElementById('fotos1');
+            for (let i = 1; i <= n; i++) {
+              gallery.innerHTML += '<a class="item hoverZoomLink" href="fotos/' + i + '.png" data-source="fotos/' + i + '.png"><img style="padding:10px;" src="fotos/' + i + '.png"></a>';
+            }
+          </script>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Portfolio End -->
-
 
   <!-- Services Start -->
   <section id="services" class="services-section section-space-padding">
@@ -173,9 +177,8 @@
           </div>
         </div>
       </div>
-
+      
       <div class="row">
-
         <div class="col-md-4 col-sm-6">
           <div class="services-detail">
             <i class="fa fa-mobile color-1"></i>
@@ -241,35 +244,28 @@
   </section>
   <!-- Services End -->
 
+  <!-- Footer Start -->
+  <footer class="footer-section" style="background-color: black;">
+    <div class="container">
+      <div class="row">
 
- <!-- Footer Start -->
- <footer class="footer-section" style="background-color: black;">
-  <div class="container">
-    <div class="row">
+        <div class="col-md-4 text-left">
+          <p><span><a href="#about" class="smoth-scroll">About Me</a></span> | <span><a href="index.html"
+                class="smoth-scroll">ROLCENA.GA</a></span></p>
+        </div>
 
-      <div class="col-md-4 text-left">
-        <p><span><a href="#about" class="smoth-scroll">About Me</a></span> | <span><a href="index.html"
-              class="smoth-scroll">ROLCENA.GA</a></span></p>
+        <div class="col-md-4 text-center">
+          <p>© Copyright 2022 </p>
+        </div>
+
+        <div class="col-md-4 text-right">
+          <p>Design By <a href="http://www.rolcena.ga" target="_blank" style="color: red;">ROLCENA</a></p>
+        </div>
+
       </div>
-
-      <div class="col-md-4 text-center">
-        <p>© Copyright 2022 </p>
-      </div>
-
-      <div class="col-md-4 text-right">
-        <p>Design By <a href="http://www.rolcena.ga" target="_blank" style="color: red;">ROLCENA</a></p>
-      </div>
-
     </div>
-  </div>
-</footer>
-<!-- Footer End -->
-
-
-  <!-- Back to Top Start -->
-  <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-  <!-- Back to Top End -->
-
+  </footer>
+  <!-- Footer End -->
 
   <!-- All Javascript Plugins  -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -279,6 +275,13 @@
 
   <!-- Main Javascript File  -->
   <script type="text/javascript" src="js/scripts.js"></script>
+
+  <!-- Carousel Galle  -->
+  <script type="text/javascript" src="js/gallery-carousel.js"></script>
+
+  <script type="text/javascript" src="js/zoom-gallery.js"></script>
+
+
 
 
 </body>
