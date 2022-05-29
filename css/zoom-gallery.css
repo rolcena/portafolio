@@ -1,5 +1,16 @@
 .image-source-link {
-	color: #98C3D1;
+	background-color: white;
+	border-radius: 20px;
+	color:black;
+	text-align: center;
+	padding:2px 10px 2px 10px;
+}
+
+.image-source-link:hover  {
+	background-color: red;
+	border-radius: 20px;
+	color:white;
+	padding:2px 10px 2px 10px;
 }
 
 .mfp-with-zoom .mfp-container,
@@ -24,3 +35,4 @@
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
