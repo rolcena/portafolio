@@ -1,32 +1,8 @@
 
-
-/*
-   
-   Table Of Content
-
-   0. Personalizados
-   
-   1. Global Style
-   2. Preloader
-   3. Home Section and Navigation Menu
-   4. About Me
-   5. Portfolio
-   6. Testimonial
-   7. Statistics
-   8. Services
-   9. Call to Action
-  10. Contact Us
-  11. Social Icons
-  12. Footer
-  13. Responsive
-  14. Scroll To Top
-  15. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
-  17. Icons Social PERSONALIZADOS
- 
-
-*/
-
-
+.frameRepair{
+    width: 100% !important;
+    height: 800px !important;
+}
 
 .ultracentrado {
     display: flex;
@@ -34,8 +10,6 @@
     padding: 20px;
     align-items: center;
 }
-
-
 
 .btn-flotante {
     font-size: 10px;
@@ -77,10 +51,6 @@
         right: 20px;
     }
 }
-
-
-
-/* Global Style */
 
 body {
     font-size: 16px;
@@ -462,7 +432,7 @@ body.loaded #preloader {
 .home-section-background {
     position: relative;
     height: 100%;
-    background: url(../images/bg/bg.png);
+    background: url(../img/bg.png);
     background-size: cover;
     z-index: 1;
 }

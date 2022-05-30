@@ -1,6 +1,6 @@
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     nav: true,
     navText: [
       "<i class='fa fa-caret-left'></i>",

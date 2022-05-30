@@ -6170,6 +6170,7 @@ a.badge:hover {
 
 .list-group-item>.badge+.badge {
   margin-right: 5px
+  margin-bottom: 20px;
 }
 
 .nav-pills>li>a>.badge {
