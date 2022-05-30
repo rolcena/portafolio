@@ -17,29 +17,13 @@
   height: 100%;
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
+  display: none;
+
 }
 
 .container-ga:hover .overlay-ga {
   display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
-.title-ga {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  transition: top .5s ease;
-}
-
-.container-ga:hover .title-ga {
-  top: 90px;
+  background: rgba(0, 0, 0, 0.368);
 }
 
 .button-ga {

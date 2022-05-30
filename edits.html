@@ -13,19 +13,15 @@
 
 <body class="bodybar">
 
-    <div class="zoom-gallery">
-        <div class="owl-carousel" id="fotos1">
-            <script>
-                let j = 10; //numero de imagenes
-                let gallery2 = document.getElementById('fotos1');
-                for (let i = 1; i <= j; i++) {
-                    gallery2.innerHTML += ' <div class="container-ga"><img style="padding:5px;" src="fotos/edits/' + i + '.png"><div class="overlay-ga"></div><div class="button-ga"><a href="fotos/edits/' + i + '.png" download="rolcena_img' + i + '"> BUTTON </a></div></div>';
-                }
-            </script>
-        </div>
+    <div class="owl-carousel" id="fotos1">
+        <script>
+            let j = 10; //numero de imagenes
+            let gallery2 = document.getElementById('fotos1');
+            for (let i = 1; i <= j; i++) {
+                gallery2.innerHTML += ' <div class="container-ga"><img style="padding:5px;" src="fotos/edits/' + i + '.png"><div class="overlay-ga"></div><div class="button-ga"><a href="fotos/edits/' + i + '.png" download="rolcena_img' + i + '"> DESCARGAR </a></div></div>';
+            }
+        </script>
     </div>
-
-   
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
