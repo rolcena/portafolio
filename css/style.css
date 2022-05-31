@@ -2,7 +2,29 @@
 .frameRepair{
     width: 100% !important;
     height: 800px !important;
+    padding-top: 20px;
+    margin-bottom: 50px;
 }
+
+.btnPortfolio {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    border: solid 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btnPortfolio:hover {
+
+    border: solid 2px red;
+    color: red;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
 
 .ultracentrado {
     display: flex;

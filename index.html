@@ -131,20 +131,30 @@
         <div class="col-sm-12">
           <div class="section-title">
             <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-title">
+            <button class="btnPortfolio" onclick="document.getElementById('iframeID').src = './gallery/edits.html'">Edits</button>
+            <button class="btnPortfolio" onclick="document.getElementById('iframeID').src = './gallery/wallppr.html'">Wallpapers</button>
+            <button class="btnPortfolio" onclick="document.getElementById('iframeID').src = './gallery/objccp.html'">CCP PNGs</button>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Portfolio End -->
-  <div class="container" style="margin-bottom: 20wh;">
-    <iframe class="iframe-resize" src="edits.html" frameborder="0" scrolling="no"></iframe>
-    <iframe class="iframe-resize" src="objccp.html" frameborder="0" scrolling="no"></iframe>
-    <iframe class="iframe-resize" src="wallppr.html" frameborder="0" scrolling="no"></iframe>
+  <div class="container" >
+    <iframe id="iframeID" class="frameRepair bodybar" src="gallery/edits.html" frameborder="0" scrolling="yes"></iframe>
   </div>
+  <!-- Portfolio End -->
 
+  
   <!-- Footer Start -->
   <footer class="footer-section" style="background-color: black;">
     <div class="container">

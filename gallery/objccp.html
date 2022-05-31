@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ROLCENA.GA</title>
+  <link rel="stylesheet" href="./gallery.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="bodybar">
+
+  <div id="app" data-state="gallery">
+    <div class="gallery" id="looping">
+      <script>
+        let j = 10; //numero de imagenes
+        let galle = document.getElementById('looping');
+        for (let i = 1; i <= j; i++) {
+          galle.innerHTML += '<figure class="gallery-image button-container">'+
+                                '<img src="./fotos/objccp/' + i +'.png" width="800" height="800" />'+
+                                '<a href="./fotos/objccp/' + i +'.png" download="rolcenaEdit"'+i+'">Download</a>'+
+                              '</figure>';
+        }
+      </script>
+    </div>
+
+    <div class="detail">
+      <!--   cloned figure/image goes here!   -->
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./gallery.js"></script>
+
+</body>
+
+</html>
