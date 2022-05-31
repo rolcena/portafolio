@@ -68,12 +68,6 @@
             }
         });
 
-        
-        /* View All Buttons */
-        $('#btn-va').click(function() { 
-            document.location = "../index2.html";
-        } );
-
 
         /* Mobile Navigation Hide or Collapse on Click */
 
