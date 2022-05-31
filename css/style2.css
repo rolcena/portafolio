@@ -337,7 +337,7 @@ fieldset {
     width: 100%;
     height: 100%;
     z-index: 99999999;
-    background-image: url('../imgccp/ccpani.gif');    /* your icon gif file path */
+    background-image: url('../img/ccp/ccpani.gif');    /* your icon gif file path */
     background-size: 15vw;
     background-repeat: no-repeat;
     background-color: #FFF;
