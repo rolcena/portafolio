@@ -3,10 +3,8 @@
   position: relative;
 }
 
-
 html,
 body {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -24,7 +22,7 @@ img {
   flex-flow: column wrap;
   align-content: space-between;
   overflow: hidden;
-  height: 310vw;
+  height: 240vw;
   /* Re-order items into rows */
   /* Force new columns */
 }
@@ -196,3 +194,41 @@ body {
   transition-duration: 0.3s;
 }
 
+
+.bodybar{
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: black red;   /* scroll thumb and track */
+}
+
+.bodybar::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.bodybar::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+.bodybar::-webkit-scrollbar-thumb {
+  background-color: red;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid black;  /* creates padding around scroll thumb */
+}
+
+.bodybar-blue{
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: #133760 red;   /* scroll thumb and track */
+}
+
+.bodybar-blue::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.bodybar-blue::-webkit-scrollbar-track {
+  background: #133760;        /* color of the tracking area */
+}
+
+.bodybar-blue::-webkit-scrollbar-thumb {
+  background-color: red;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #133760;  /* creates padding around scroll thumb */
+}
