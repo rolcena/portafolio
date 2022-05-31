@@ -88,6 +88,8 @@
     }
 }
 
+
+
 .button-container .btn1 a:hover {
     background-color: red;
     cursor: pointer;
@@ -125,9 +127,9 @@ body {
 }
 
 .container {
-    max-width: 100vh;
+    max-width: 150vh;
     margin: 0 auto;
-    padding: 0 2rem 2rem;
+    padding: 0em ;
 }
 
 .heading {
@@ -243,7 +245,21 @@ Remove or comment-out the code block below to see how the browser will fall-back
     color: white;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:  768px) {
+    .button-container .btn1 {
+       
+        bottom: 4em;
+      
+    }
+    .button-container .btn2 {
+       
+        bottom: 1em;
+      
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
     .button-container .btn1 {
        
         bottom: 2em;
@@ -256,3 +272,4 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 
 }
+
