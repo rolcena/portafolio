@@ -204,15 +204,16 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .button-container .btn1 {
-    font-size: 7px;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    bottom: 1em;
+    bottom: 4em;
     right: 1em;
     text-decoration: none;
     text-align: center;
     padding: 5px 10px 5px 10px;
     background-color: #ffffff4f;
+    box-shadow: 1px 1px 1px 1px #8888882f;
     color: rgba(255, 255, 255, 0.626);
     text-transform: uppercase;
 }
@@ -223,11 +224,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 .button-container .btn2 {
-    font-size: 7px;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
     bottom: 1em;
-    right: 7em;
+    right: 1em;
     text-decoration: none;
     text-align: center;
     padding: 5px 10px 5px 10px;
@@ -240,4 +241,18 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .button-container .btn2:hover {
     background-color: red;
     color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .button-container .btn1 {
+       
+        bottom: 2em;
+      
+    }
+    .button-container .btn2 {
+       
+        bottom: 1em;
+      
+    }
+
 }
