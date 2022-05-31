@@ -69,24 +69,7 @@ img {
   width: 100%;
 }
 
-.button-container {
-  display: inline-block;
-  position: relative;
-}
 
-.button-container a {
-  text-align: center;
-  justify-items: center;
-  font-size: 10px;
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
-  background-color: #ff000067;
-  border-radius: 1.5em;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  padding: 0.5em 1em;
-}
 
 .gallery-image figcaption {
   position: absolute;
@@ -174,7 +157,37 @@ body {
 }
 
 #app:hover .gallery .gallery-image {
-  opacity: 0.3;
+  opacity: 1;
+}
+
+.button-container a{
+  display: inline-block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.19);
+  text-align: center;
+  justify-items: center;
+  font-size: 10px;
+  position: absolute;
+  padding: 0px 10px 0px 10px;
+  bottom: 2em;
+  right: 2em;
+  border-radius: 1em;
+  color:white;
+}
+
+.button-container a:hover{
+  display: inline-block;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.356);
+  text-align: center;
+  justify-items: center;
+  font-size: 10px;
+  position: absolute;
+  padding: 0px 10px 0px 10px;
+  bottom: 2em;
+  right: 2em;
+  border-radius: 1em;
+  color:white;
 }
 
 #app:hover .gallery .gallery-image[data-flipping],
@@ -182,3 +195,4 @@ body {
   opacity: 1;
   transition-duration: 0.3s;
 }
+

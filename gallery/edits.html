@@ -20,15 +20,15 @@
       <script>
        
 
-        let j = 10; //numero de imagenes
+        let j = 20; //numero de imagenes
         let galle = document.getElementById('looping');
         for (let i = 1; i <= j; i++) {
           galle.innerHTML += '<figure class="gallery-image button-container">' +
-            '<img id="img212" onerror=getElementById("img212").deleted" src="./fotos/edits/' + i +
-            '.png" width="800" height="800" alt=""/>' +
-            '<a href="./fotos/edits/' + i + '.png" download="rolcenaEdit"' + i + '">Download</a>' +
+            '<img  src="./fotos/edits/' + i + '.png" width="800" height="800" alt="">' +
+            '<a href="./fotos/edits/' + i + '.png" download="rolcenaEdit"' + i + '">Download</a></img>' +
             '</figure>';
         }
+        
       </script>
     </div>
 
@@ -38,6 +38,7 @@
   </div>
 
   <script type="text/javascript" src="./gallery.js"></script>
+ 
 
 </body>
 

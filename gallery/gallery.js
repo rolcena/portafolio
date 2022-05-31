@@ -1,5 +1,3 @@
-
-
 const elApp = document.querySelector("#app");
 
 const elImages = Array.from(document.querySelectorAll(".gallery-image"));
@@ -20,8 +18,7 @@ function flipImages(firstEl, lastEl, change) {
   change();
   lastEl.parentElement.dataset.flipping = true;
 
-  const animation = lastEl.animate([
-    {
+  const animation = lastEl.animate([{
       transform: `translateX(${deltaX}px) translateY(${deltaY}px) scaleX(${deltaW}) scaleY(${deltaH})`
     },
     {
@@ -31,41 +28,27 @@ function flipImages(firstEl, lastEl, change) {
     duration: 600, // milliseconds
     easing: 'cubic-bezier(.2, 0, .3, 1)'
   });
-
   animation.onfinish = () => {
     delete lastEl.parentElement.dataset.flipping;
   }
-
 }
-
 elImages.forEach(figure => {
-
   figure.addEventListener("click", () => {
     const elImage = figure.querySelector('img');
-
     elDetail.innerHTML = "";
-
     const elClone = figure.cloneNode(true);
     elDetail.appendChild(elClone);
-
     const elCloneImage = elClone.querySelector('img');
-
-    flipImages(elImage, elCloneImage, ()=>{
-      elApp.dataset.state="detail";
+    flipImages(elImage, elCloneImage, () => {
+      elApp.dataset.state = "detail";
     });
+    function revert() {
+      flipImages(elCloneImage, elImage, () => {
+        elApp.dataset.state = "gallery";
+        elDetail.removeEventListener('click', revert);
 
-    function revert(){
-
-      flipImages(elCloneImage, elImage, ()=>{
-        elApp.dataset.state="gallery";
-        elDetail.removeEventListener('click',revert);
       });
-
     }
-
-    elDetail.addEventListener('click',revert);
-
+    elDetail.addEventListener('click', revert);
   });
 });
-
-
