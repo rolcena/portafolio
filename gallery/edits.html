@@ -13,31 +13,25 @@
 
 <body class="bodybar">
 
-  <div id="app" data-state="gallery">
+  <div class="container">
+
     <div class="gallery" id="looping">
 
       <script>
-       
-
-        let j = 20; //numero de imagenes
+        let j = 21; //numero de imagenes
         let galle = document.getElementById('looping');
         for (let i = 1; i <= j; i++) {
-          galle.innerHTML += '<figure class="gallery-image button-container">' +
-            '<img  src="./fotos/edits/' + i + '.png" width="800" height="800" alt="">' +
-            '<a href="./fotos/edits/' + i + '.png" download="rolcenaEdit"' + i + '">Download</a></img>' +
-            '</figure>';
+          galle.innerHTML += '<div class="gallery-item button-container" >' +
+            '<img class="gallery-image" src="./fotos/edits/' + i + '.png">' +
+            '<a class="btn btn1" href="./fotos/edits/' + i + '.png" target="_blank">VIEW</a>' +
+            '<a class="btn btn2" href="./fotos/edits/' + i + '.png" download="rolcena"' + i + '"">DOWNLOAD</a>' +
+            '</div>';
         }
-        
       </script>
+
     </div>
 
-    <div class="detail">
-      <!--   cloned figure/image goes here!   -->
-    </div>
   </div>
-
-  <script type="text/javascript" src="./gallery.js"></script>
- 
 
 </body>
 
